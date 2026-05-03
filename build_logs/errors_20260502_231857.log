@@ -1,0 +1,67 @@
+[2026-05-02 23:22:01] ERROR: 编译失败 (退出码: )
+=== 编译错误分析 ===
+退出码: 
+时间: Sat May  2 11:22:01 PM CST 2026
+命令: make ARCH=arm64 LLVM=1     CC='/home/wyc/llvm-18.1.8-aarch64/bin/clang'     LD='/home/wyc/llvm-18.1.8-aarch64/bin/ld.lld'     AR='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-ar'     NM='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-nm'     STRIP='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-strip'     OBJCOPY='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-objcopy'     OBJDUMP='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-objdump'     O='./out'     -j8
+
+=== 错误汇总 ===
+[2026-05-02 23:22:01] ERROR: 编译失败 (退出码: )
+
+=== 未定义符号 ===
+
+=== 失败的任务 ===
+
+=== 警告信息 ===
+arch/arm64/configs/vendor/star_defconfig:116:warning: override: reassigning to symbol KALLSYMS_ALL
+
+=== 最后50行日志 ===
+  HDRINST usr/include/audio/sound/wcd-dsp-glink.h
+  HDRINST usr/include/camera/media/cam_cpas.h
+  HDRINST usr/include/camera/media/cam_custom.h
+  HDRINST usr/include/camera/media/cam_defs.h
+  HDRINST usr/include/camera/media/cam_fd.h
+  HDRINST usr/include/camera/media/cam_icp.h
+  HDRINST usr/include/camera/media/cam_isp.h
+  HDRINST usr/include/camera/media/cam_isp_ife.h
+  HDRINST usr/include/camera/media/cam_isp_sfe.h
+  HDRINST usr/include/camera/media/cam_isp_tfe.h
+  HDRINST usr/include/camera/media/cam_isp_vfe.h
+  HDRINST usr/include/camera/media/cam_jpeg.h
+  HDRINST usr/include/camera/media/cam_lrme.h
+  HDRINST usr/include/camera/media/cam_ope.h
+  HDRINST usr/include/camera/media/cam_req_mgr.h
+  HDRINST usr/include/camera/media/cam_sensor.h
+  HDRINST usr/include/camera/media/cam_sync.h
+  HDRINST usr/include/camera/media/cam_tfe.h
+  HDRINST usr/include/camera/media/cam_cpas.h
+  HDRINST usr/include/camera/media/cam_custom.h
+  HDRINST usr/include/camera/media/cam_defs.h
+  HDRINST usr/include/camera/media/cam_fd.h
+  HDRINST usr/include/camera/media/cam_icp.h
+  HDRINST usr/include/camera/media/cam_isp.h
+  HDRINST usr/include/camera/media/cam_isp_ife.h
+  HDRINST usr/include/camera/media/cam_isp_sfe.h
+  HDRINST usr/include/camera/media/cam_isp_tfe.h
+  HDRINST usr/include/camera/media/cam_isp_vfe.h
+  HDRINST usr/include/camera/media/cam_jpeg.h
+  HDRINST usr/include/camera/media/cam_lrme.h
+  HDRINST usr/include/camera/media/cam_ope.h
+  HDRINST usr/include/camera/media/cam_req_mgr.h
+  HDRINST usr/include/camera/media/cam_sensor.h
+  HDRINST usr/include/camera/media/cam_sync.h
+  HDRINST usr/include/camera/media/cam_tfe.h
+  HDRINST usr/include/display/drm/mi_disp.h
+  HDRINST usr/include/display/drm/msm_drm_pp.h
+  HDRINST usr/include/display/drm/sde_drm.h
+  HDRINST usr/include/display/hdcp/msm_hdmi_hdcp_mgr.h
+  HDRINST usr/include/display/media/mmm_color_fmt.h
+  HDRINST usr/include/display/media/msm_sde_rotator.h
+  HDRINST usr/include/vidc/media/msm_media_info.h
+  HDRINST usr/include/vidc/media/msm_vidc_utils.h
+make[1]: Leaving directory '/home/wyc/android_kernel_xiaomi_sm8350-miui/out'
+make: *** [Makefile:190: sub-make] Error 2
+=================
+编译退出码: 2
+时间: Sat May  2 11:22:01 PM CST 2026
+=== 编译结束 ===
+[2026-05-02 23:22:01] ERROR: 编译失败 (退出码: )

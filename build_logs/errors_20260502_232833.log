@@ -1,0 +1,87 @@
+[2026-05-03 00:11:16] ERROR: 编译失败 (退出码: )
+=== 编译错误分析 ===
+退出码: 
+时间: Sun May  3 12:11:16 AM CST 2026
+命令: make ARCH=arm64 LLVM=1     CC='/home/wyc/llvm-18.1.8-aarch64/bin/clang'     LD='/home/wyc/llvm-18.1.8-aarch64/bin/ld.lld'     AR='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-ar'     NM='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-nm'     STRIP='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-strip'     OBJCOPY='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-objcopy'     OBJDUMP='/home/wyc/llvm-18.1.8-aarch64/bin/llvm-objdump'     O='./out'     -j8
+
+=== 错误汇总 ===
+../fs/stat.c:695:31: error: incompatible pointer types passing 'struct compat_stat **' to parameter of type 'struct stat **' [-Werror,-Wincompatible-pointer-types]
+[2026-05-03 00:11:16] ERROR: 编译失败 (退出码: )
+
+=== 未定义符号 ===
+
+=== 失败的任务 ===
+
+=== 警告信息 ===
+./usr/include/linux/ispv2_ioparam.h:33:32: warning: // comments are not allowed in this language [-Wcomment]
+../drivers/block/zram/zram_drv.c:167:56: warning: shift count >= width of type [-Wshift-count-overflow]
+../drivers/block/zram/zram_drv.c:169:36: warning: shift count >= width of type [-Wshift-count-overflow]
+../drivers/block/zram/zram_drv.c:2199:21: warning: variable 'prio' is uninitialized when used here [-Wuninitialized]
+../drivers/hwtracing/coresight/coresight-tmc.c:423:26: warning: 'sscanf' may overflow; destination buffer in argument 3 has size 10, but the corresponding specifier may require size 11 [-Wfortify-source]
+../drivers/hwtracing/coresight/coresight-tmc.c:464:26: warning: 'sscanf' may overflow; destination buffer in argument 3 has size 10, but the corresponding specifier may require size 11 [-Wfortify-source]
+../drivers/input/touchscreen/cyttsp5/cyttsp5_device_access.c:1810:3: warning: misleading indentation; statement is not part of the previous 'if' [-Wmisleading-indentation]
+../drivers/input/touchscreen/cyttsp5/cyttsp5_device_access.c:2033:7: warning: misleading indentation; statement is not part of the previous 'for' [-Wmisleading-indentation]
+../drivers/input/touchscreen/cyttsp5/cyttsp5_device_access.c:2071:7: warning: misleading indentation; statement is not part of the previous 'for' [-Wmisleading-indentation]
+../drivers/input/touchscreen/fts_spi/fts_proc.c:483:24: warning: 'sscanf' may overflow; destination buffer in argument 3 has size 100, but the corresponding specifier may require size 101 [-Wfortify-source]
+../drivers/input/touchscreen/fts_spi/fts.c:249:29: warning: 'sscanf' may overflow; destination buffer in argument 3 has size 100, but the corresponding specifier may require size 101 [-Wfortify-source]
+../drivers/input/touchscreen/fts_spi/fts.c:1258:3: warning: misleading indentation; statement is not part of the previous 'if' [-Wmisleading-indentation]
+../drivers/gpu/msm/adreno_dispatch.c:1093:22: warning: unused variable 'device' [-Wunused-variable]
+../drivers/thermal/qcom/max31760_fan.c:331:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+../drivers/thermal/thermal_core.c:1898:8: warning: 'snprintf' size argument is too large; destination buffer has size 128, but size argument is 4096 [-Wfortify-source]
+../drivers/thermal/thermal_core.c:1982:2: warning: 'snprintf' size argument is too large; destination buffer has size 128, but size argument is 4096 [-Wfortify-source]
+../drivers/thermal/thermal_core.c:2001:2: warning: 'snprintf' size argument is too large; destination buffer has size 128, but size argument is 4096 [-Wfortify-source]
+../drivers/soc/qcom/msm_performance.c:918:2: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+../drivers/staging/qcacld-3.0/core/mac/src/sys/legacy/src/utils/src/parser_api.c:6177:14: warning: argument 'mdie' of type 'uint8_t[3]' (aka 'unsigned char[3]') with mismatched bound [-Warray-parameter]
+../drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/dp/wifi3.0/dp_htt.c:4099:13: warning: unused function 'dp_htt_process_stats_tlv' [-Wunused-function]
+
+=== 最后50行日志 ===
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/ath_procfs.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/hif_main.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/hif_runtime_pm.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/hif_exec.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/hif_irq_affinity.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/pcie/if_pci.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/ce/ce_diag.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/ce/ce_main.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/ce/ce_service.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/ce/ce_tasklet.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/mp_dev.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/regtable.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/qca6490def.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/ce/ce_service_srng.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hif/src/dispatcher/multibus_pci.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hal/wifi3.0/hal_srng.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hal/wifi3.0/hal_reo.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hal/wifi3.0/hal_rx_flow.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/hal/wifi3.0/qca6490/hal_6490.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_main.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_scan_roam.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_dev_if.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_mgmt.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_power.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_data.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_utils.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_features.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wlan_qct_wma_legacy.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_nan_datapath.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_fips_api.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_utils_ut.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_he.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_twt.o
+  CC      drivers/staging/qcacld-3.0/core/wma/src/wma_fw_state.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/target_if/direct_buf_rx/src/target_if_direct_buf_rx_api.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/target_if/direct_buf_rx/src/target_if_direct_buf_rx_main.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/wmi/src/wmi_unified_dbr_api.o
+  CC      drivers/staging/qcacld-3.0/../qca-wifi-host-cmn/wmi/src/wmi_unified_dbr_tlv.o
+  CC      drivers/staging/qcacld-3.0/core/pld/src/pld_common.o
+  CC      drivers/staging/qcacld-3.0/core/pld/src/pld_pcie.o
+  AR      drivers/staging/qcacld-3.0/built-in.a
+  AR      drivers/staging/built-in.a
+  AR      drivers/built-in.a
+make[1]: Leaving directory '/home/wyc/android_kernel_xiaomi_sm8350-miui/out'
+make: *** [Makefile:190: sub-make] Error 2
+=================
+编译退出码: 2
+时间: Sun May  3 12:11:16 AM CST 2026
+=== 编译结束 ===
+[2026-05-03 00:11:16] ERROR: 编译失败 (退出码: )
